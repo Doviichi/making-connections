@@ -1,0 +1,25 @@
+.edu-container{
+    height: 200px;
+    width: 600px;
+    background-color: whitesmoke;
+    border: 2px solid black;
+    font-family: monospace; 
+}
+.edu-top{
+    height: 70px;
+    width: inherit;
+    background-color: black;
+}
+.edu{
+    color: white;
+    font-size: 30px;
+    align-items: middle;
+    
+}
+.edu-text{
+    margin-left: 18px;
+    
+}
+.edu-text p{
+    font-size: 15px;
+}

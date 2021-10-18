@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--usercard font--> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="profilepage.css"> 
+    <!--flexnav stylesheet--> 
+    <link rel="styleSheet" href="flexnav-profilepage.css">
+    <!--user card style sheet-->
+    <link rel="stylesheet" href="usercard-profilepage.css">
+    <title> Profile Page</title>
+    <!--conection request style sheet-->
+    <link rel="stylesheet" href="conectionRequest.css">
+    <!--Your connections style sheet-->
+    <link rel="styleSheet" href="yourConnections.css">
+    <!--educaition box-->
+    <link rel="stylesheet" href="education.css">
+</head>
+<body>
+    <div class="flex-all">
+    <!--flex nav-->
+        <div class="flex-nav">
+            <div class="nav">
+                
+                <ul class="nav-links">
+                    <li><h1 class="nav-title">Profile</h1></li>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#" class="active">My Profile</a></li>
+                    <li><a href="#">Find Connections</a></li>
+                </ul>
+                <button id="btn">Sign Out</button>
+            </div>
+        </div>
+<div class="row-all">
+    <div class="big-two-container">
+        <!-- user card-->
+        <div>
+            <div class="user-card">
+                <div class="container">
+                    <div class="top-line">
+                        <!--this is the profile pic-->
+                        <img src="icons/user-circle.png" alt="user user-pic" class="user-pic"> 
+                    </div>
+                    <!--persons name-->
+                    <div>
+                        <h1 id="text">Jane Doe</h1>
+                    </div>
+                    <!--location pin-->
+                    <div> <img src="icons/map-marker.png" alt="pin" class="pin"> Seattle
+                    </div>
+                    <div>
+                        <p class="develeper">Develeper | Engineer | Problem Solver <br>
+                        Master of shadows and the Internet!</p>
+                    </div>
+                    <div>
+                        <a href="#" onclick="changeName();" ><img src="icons/gear.png" alt="gear" class="gear"> edit profile</a>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    <!--education-->
+        <div class="edu-container">
+            <div class="edu-top">
+                <div class="edu">Education</div>
+            </div>
+            <div class="edu-text">
+            <h2>Coding Dojo - Full Stack Bootcamp</h2>
+            <p>Dec 2019 - Mar 2020</p>
+            <p>Triple black belt in Python, MERN and c#...</p>
+            </div>
+        </div>
+    </div>
+    <div class="small-two-container">
+            <!--connection Requests-->
+            <div class="cr-container">
+                <!-- top line -->
+                <div class="cr-top">
+                <div class="numbertwo">2</div> <div id="cr-icon">conection Requests</div>
+                </div>
+                
+                <!-- todd -->
+                <div class="cr-flex" id="todd">
+                    <div class="cr-person"> <img src="images/todd-s.jpg" alt="profilepic" class="pic"> Todd E</div>
+                    <div>
+                        <img src="icons/accept-circle.png" alt="accept" class="pic" onclick="remove('#todd');">
+                        <img src="icons/close-circle.png" alt="decline" class="pic" onclick="remove('#todd');">
+                    </div>
+                </div>
+                <div class="cr-flex" id="phil">
+                    <!-- phil -->
+                    <div class="cr-person"><img src="images/phil-s.jpg" alt="profilepic" class="pic"> Phil K</div>
+                    <div>
+                        <img src="icons/accept-circle.png" alt="accept" class="pic" onclick="remove('#phil');">
+                        <img src="icons/close-circle.png" alt="decline" class="pic" onclick="remove('#phil'); minusOne();" >
+                    </div>
+                </div>
+            </div>
+        
+
+    <!--Your connectiions-->
+    <div class="yc-container">
+        <div class="yc-topline">
+            <div class="fivehundred">500+</div>
+            <div id="yc-icon"> Your Connections</div>
+        </div>
+        <div>
+            <div class="yc-person"><img src="images/adrien-s.jpg" alt="profilepic" class="pic"> Adrien D</div>
+            <div class="yc-person"><img src="images/anne-s.jpg" alt="profilepic" class="pic"> anne J</div>
+            <div class="yc-person"><img src="images/alayne-s.jpg" alt="profilepic" class="pic"> Alayne T</div>
+            <div class="yc-person"><img src="images/arry-s.jpg" alt="profilepic" class="pic"> Arry Y</div>
+        </div>
+        <div class="veiwmore"> <a href="https://google.com"> View More</a> </div>
+        </div>
+    </div>
+    </div>
+</div>
+<script src="makingConnections.js"></script>
+</body>
+</html>

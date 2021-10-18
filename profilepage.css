@@ -1,0 +1,20 @@
+.flex-all{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+}
+.row-all{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.big-two-container{
+    display: flex;
+    flex-direction: column;
+
+}
+.small-two-container{
+    display: flex;
+    flex-direction: column;
+
+}

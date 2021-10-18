@@ -1,0 +1,17 @@
+.nav-container{
+    width: auto;
+    height: 80px;
+    background-color: black;
+    display: flex;
+}
+.profile{
+    color: gray;
+    font-size: 40px;
+    display: flex;
+    
+}
+.list{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
